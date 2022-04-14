@@ -1,23 +1,29 @@
 package starting;
 
+import java.io.IOException;
+
+
 public class yee {
-    public static void main(String[] args) {
-        int myAge = 29;
-        int yourAge = 40;
-        int totalAge = 0;
+    public static void main(String[] args) throws IOException {
+        int y = 7;
+        int k = 4;
+        var pog = (y<=k)?y*k:k-y;
+
+        String myFirstName = "john";
         //this block declares and initializes three variables
-     
-        System.out.println("myAge = " + myAge);
-        System.out.println("yourAge = " + yourAge);
-        System.out.println("totalAge = " + totalAge);
-        // this block prints the variable name, the equal sign, and the value stored in it
-     
-        totalAge = myAge + yourAge;
-        // puts the results from the right-hand side of the equal sign into the variable on the left of it
-     
-        System.out.println("totalAge = " + totalAge);
-        // prints new value stored in totalAge
-     
+        System.out.println(pog);
+        System.out.println(myFirstName);
+        System.out.println("Do you want to countinue?");
+
+        System.out.println("Enter Y for yes and N for no");
+
+        char userChoice = (char) System.in.read();
+        //read user input and store in
+
+        //userChoice character variable
+
+        System.in.read(); //to account for the Enter key
         System.out.println("Yeeee hewo!\nhehe");
+        System.out.println(userChoice);
     }
 }
